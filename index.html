@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- #1A4341 -->
+    <div
+      class="header-container w-full h-screen bg-[url('/assets/images/bg.jpg')] bg-cover bg-no-repeat bg-center"
+    >
+      <header
+        class="flex items-center bg-white justify-between px-4 md:px-5 py-2"
+      >
+        <div class="logo">
+          <img
+            src="assets/images/logo.png"
+            class="w-8 h-8 md:w-10 md:h-10"
+            alt=""
+          />
+        </div>
+        <nav
+          class="absolute md:static w-full md:w-auto bg-[#43b6b0] md:bg-transparent toggle-menu left-0 h-0 md:h-auto overflow-hidden top-[55px]"
+        >
+          <ul class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+            <li
+              class="text-[13px] font-medium text-white md:text-black cursor-pointer"
+            >
+              Home
+            </li>
+            <li
+              class="text-[13px] font-medium text-white md:text-black cursor-pointer"
+            >
+              About Us
+            </li>
+            <li
+              class="text-[13px] font-medium text-white md:text-black cursor-pointer"
+            >
+              Rooms
+            </li>
+            <li
+              class="text-[13px] font-medium text-white md:text-black cursor-pointer"
+            >
+              Restaurant
+            </li>
+            <li
+              class="text-[13px] font-medium text-white md:text-black cursor-pointer"
+            >
+              Gallary
+            </li>
+            <li
+              class="text-[13px] font-medium text-white md:text-black cursor-pointer"
+            >
+              Contact Us
+            </li>
+          </ul>
+        </nav>
+        <div class="header-btns flex items-center gap-5 hidden md:flex">
+          <div class="text-[13px] cursor-pointer">Login</div>
+          <div
+            class="px-4 py-1 bg-[#43b6b0] cursor-pointer text-white text-[13px] hover:bg-white hover:border hover:border-[#43b6b0] duration-[700ms] hover:text-black rounded-sm"
+          >
+            Sign up
+          </div>
+        </div>
+        <i
+          class="fa-solid fa-bars text-[#43b6b0] md:hidden toggle-btn cursor-pointer"
+        ></i>
+      </header>
+      <div
+        class="flex flex-col gap-3 w-full items-center justify-end md:justify-end h-4/5 pl-[30px]"
+      >
+        <h1 class="text-white text-[30px] md:text-[45px] font-bold">
+          Feel Staying, Like your own home
+        </h1>
+        <p class="block md:hidden text-[13px] text-white">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolor
+          officiis, obcaecati dolores voluptatem dolore velit magni repudiandae
+          quia quos!
+        </p>
+        <div
+          class="w-11/12 md:w-3/4 h-11/12 md:h-[150px] rounded-3xl p-5 md:p-0 check-menu hidden md:flex fixed md:static left-5 bottom-5 bg-[rgba(255,255,255,0.4)] flex-col md:flex-row items-center justify-center gap-4"
+        >
+          <div
+            class="bg-white flex flex-col items-center gap-3 p-5 rounded-3xl w-[200px]"
+          >
+            <div class="flex items-center gap-2 font-medium">
+              <i class="fa-solid fa-calendar"></i>
+              <h3 class="text-[13px] md:text-[15px] font-semibold">Check in</h3>
+            </div>
+            <small class="text-slate-600">12 Aug 2024</small>
+          </div>
+          <div
+            class="bg-white flex flex-col items-center gap-3 p-5 rounded-3xl w-[200px]"
+          >
+            <div class="flex items-center gap-2 font-medium">
+              <i class="fa-regular fa-calendar"></i>
+              <h3 class="text-[13px] md:text-[15px] font-semibold">
+                Check out
+              </h3>
+            </div>
+            <small class="text-slate-600">15 Aug 2024</small>
+          </div>
+          <div
+            class="bg-white flex flex-col items-center gap-3 p-5 rounded-3xl w-[200px]"
+          >
+            <div class="flex items-center gap-2 font-medium">
+              <i class="fa fa-user"></i>
+              <h3 class="text-[13px] md:text-[15px] font-semibold">
+                Rooms for
+              </h3>
+            </div>
+            <small class="text-slate-600">1 room,2 guests</small>
+          </div>
+          <div
+            class="py-3 cursor-pointer px-10 rounded-3xl flex w-[200px] items-center gap-2 bg-[#43b6b0] text-white"
+          >
+            <i class="fa fa-search text-[13px]"></i>
+            <h3 class="text-[14px]">Search</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i
+      class="fa-solid fa-hotel fixed top-64 text-[13px] check-btn z-10 right-0 md:hidden w-10 h-10 rounded-full flex items-center justify-center bg-white cursor-pointer text-[#43b6b0]"
+    ></i>
+
+    <div class="flex items-center justify-center py-20">
+      <div class="w-4/5 grid grid-cols-1 md:grid-cols-2 items-center gap-3">
+        <div>
+          <img
+            src="./assets/images/about_image.jpg"
+            alt=""
+            class="w-full h-60 object-cover"
+          />
+        </div>
+        <div class="h-full flex flex-col items-center justify-center">
+          <h2 class="uppercase font-medium text-[#43b6b0] py-5">
+            Star hotel with unforgetable view
+          </h2>
+          <p class="text-[13px] md:text-[14px] text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            commodi eveniet modi earum? Est a non natus debitis laboriosam modi.
+            Animi nihil earum rem repudiandae, maxime modi exercitationem
+            commodi optio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-20">
+      <div class="flex justify-center">
+        <h2
+          class="text-center text-[25px] font-semibold offer-text relative inline-block"
+        >
+          What do we offer
+        </h2>
+      </div>
+      <p class="text-center text-[14px]">
+        There are many variations of passages
+      </p>
+      <div class="flex justify-center">
+        <div class="w-3/4 grid grid-cols-1 md:grid-cols-4 gap-y-5 py-12">
+          <div class="flex flex-col gap-1 items-center">
+            <img
+              src="./assets/images/icon_1.png"
+              class="w-20 md:w-24 h-20 md:h-24"
+              alt="icon_1"
+            />
+            <h3 class="text-[14px] font-medium">Comfortable rest</h3>
+            <p class="text-[13px] text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+            <div
+              class="text-[12px] cursor-pointer px-4 mt-1 py-2 rounded-3xl bg-[#43b6b0] text-white"
+            >
+              Learn more
+            </div>
+          </div>
+          <div class="flex flex-col gap-1 items-center">
+            <img
+              src="./assets/images/icon_2.png"
+              class="w-20 md:w-24 h-20 md:h-24"
+              alt="icon_2"
+            />
+            <h3 class="text-[14px] font-medium">Best servive</h3>
+            <p class="text-[13px] text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+            <div
+              class="text-[12px] cursor-pointer px-4 mt-1 py-2 rounded-3xl bg-[#43b6b0] text-white"
+            >
+              Learn more
+            </div>
+          </div>
+          <div class="flex flex-col gap-1 items-center">
+            <img
+              src="./assets/images/icon_3.png"
+              class="w-20 md:w-24 h-20 md:h-24"
+              alt="icon_3"
+            />
+            <h3 class="text-[14px] font-medium">Delicious food</h3>
+            <p class="text-[13px] text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+            <div
+              class="text-[12px] cursor-pointer px-4 mt-1 py-2 rounded-3xl bg-[#43b6b0] text-white"
+            >
+              Learn more
+            </div>
+          </div>
+          <div class="flex flex-col gap-1 items-center">
+            <img
+              src="./assets/images/icon_4.png"
+              class="w-20 md:w-24 h-20 md:h-24"
+              alt="icon_4"
+            />
+            <h3 class="text-[14px] font-medium">Unforgettable SPA</h3>
+            <p class="text-[13px] text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
+            </p>
+            <div
+              class="text-[12px] cursor-pointer mt-1 px-4 py-2 rounded-3xl bg-[#43b6b0] text-white"
+            >
+              Learn more
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center py-12">
+      <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div>
+          <img
+            src="./assets/images/break_fast_img.jpg"
+            class="w-full h-64 object-cover"
+            alt="break_fast_img"
+          />
+        </div>
+        <div class="relative">
+          <div
+            class="flex flex-col gap-2 items-center justify-center bg-slate-100 p-10 absolute top-[-80px] md:top-[45px] left-0 md:left-[-30px]"
+          >
+            <h3 class="text-[20px] font-semibold">Hight quality foods</h3>
+            <p class="text-[13px] text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              similique sequi architecto esse consequuntur est.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center py-12">
+      <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div class="relative">
+          <div
+            class="flex flex-col gap-2 items-center justify-center bg-slate-100 p-10 absolute top-[150px] md:top-[45px] right-0 md:right-[-30px]"
+          >
+            <h3 class="text-[20px] font-semibold">Unforgettable SPA</h3>
+            <p class="text-[13px] text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              similique sequi architecto esse consequuntur est.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assets/images/spa_img.jpg"
+            class="w-full h-64 object-cover"
+            alt="spa_img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="py-10">
+      <div class="flex justify-center">
+        <h2
+          class="text-center text-[25px] font-semibold offer-text relative inline-block"
+        >
+          Top Apartments
+        </h2>
+      </div>
+      <div class="flex justify-center py-14">
+        <div class="w-3/4 grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)]">
+            <img src="./assets/images/room_1.jpg" alt="room_1" />
+            <div class="p-3">
+              <div class="flex justify-between pb-1">
+                <h3 class="text-[14px] font-semibold">Deluxe</h3>
+                <h3 class="text-[14px] font-semibold">$200/night</h3>
+              </div>
+              <small>
+                <i class="fa-solid fa-bath"></i>
+                2 Bathrooms
+              </small>
+              <small class="px-5">
+                <i class="fa-solid fa-bed"></i>
+                2 Bedrooms
+              </small>
+              <div
+                class="w-28 h-8 flex items-center justify-center mx-auto my-4 rounded-3xl text-white text-[13px] bg-[#43b6b0]"
+              >
+                Book now
+              </div>
+            </div>
+          </div>
+          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)]">
+            <img src="./assets/images/room_2.jpg" alt="room_2" />
+            <div class="p-3">
+              <div class="flex justify-between pb-1">
+                <h3 class="text-[14px] font-semibold">Presitendial Suite</h3>
+                <h3 class="text-[14px] font-semibold">$300/night</h3>
+              </div>
+              <small>
+                <i class="fa-solid fa-bath"></i>
+                2 Bathrooms
+              </small>
+              <small class="px-5">
+                <i class="fa-solid fa-bed"></i>
+                2 Bedrooms
+              </small>
+              <div
+                class="w-28 h-8 flex items-center justify-center mx-auto my-4 rounded-3xl text-white text-[13px] bg-[#43b6b0]"
+              >
+                Book now
+              </div>
+            </div>
+          </div>
+          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)]">
+            <img src="./assets/images/room_3.jpg" alt="room_3" />
+            <div class="p-3">
+              <div class="flex justify-between pb-1">
+                <h3 class="text-[14px] font-semibold">King</h3>
+                <h3 class="text-[14px] font-semibold">$500/night</h3>
+              </div>
+              <small>
+                <i class="fa-solid fa-bath"></i>
+                2 Bathrooms
+              </small>
+              <small class="px-5">
+                <i class="fa-solid fa-bed"></i>
+                2 Bedrooms
+              </small>
+              <div
+                class="w-28 h-8 flex items-center justify-center mx-auto my-4 rounded-3xl text-white text-[13px] bg-[#43b6b0]"
+              >
+                Book now
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-10 flex justify-center">
+      <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="flex flex-col gap-2">
+          <img src="./assets/images/room_4.jpg" alt="room_4">
+          <div class="grid grid-cols-3 gap-2">
+            <img src="./assets/images/room_sub1.jpg" alt="room_sub1">
+            <img src="./assets/images/room_sub2.jpg" alt="room_sub2">
+            <img src="./assets/images/room_sub3.jpg" alt="room_sub3">
+          </div>
+        </div>
+        <div>
+          <h3 class="text-[18px] md:text-[20px] font-semibold ">Room Details</h3>
+          <p class="text-[13px] py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus, velit aperiam et, quod ex cum vero doloribus odit doloremque nesciunt. Porro excepturi voluptatibus sapiente!</p>
+          <h3 class="text-[18px] md:text-[20px] font-semibold">Room Amenities</h3>
+          <div class="grid grid-cols-4 gap-2 py-3 text-[#43b6b0]">
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-wifi text-[12px]"></i>
+              <small class="text-[12px]">Free wifi</small>
+            </div>
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-tv"></i>
+              <small class="text-[12px]">64-inch TV</small>
+            </div>
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-temperature-arrow-up"></i>
+              <small class="text-[12px]">Heater</small>
+            </div>
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-fax"></i>
+              <small class="text-[12px]">Laundry</small>
+            </div>
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-key"></i>
+              <small class="text-[12px]">Digital Key</small>
+            </div>
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-dog"></i>
+              <small class="text-[12px]">Pet Friendly</small>
+            </div>
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <small class="text-[12px]">Mini bar</small>
+            </div>
+            <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
+              <i class="fa-solid fa-fan"></i>
+              <small class="text-[12px]">Air cooler</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleMenu = document.querySelector(".toggle-menu");
+      toggleBtn.addEventListener("click", function () {
+        toggleMenu.classList.toggle("active");
+      });
+      const checkBtn = document.querySelector(".check-btn");
+      const checkMenu = document.querySelector(".check-menu");
+      checkBtn.addEventListener("click", function () {
+        checkMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

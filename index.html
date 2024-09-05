@@ -13,11 +13,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
   </head>
   <body>
     <!-- #1A4341 -->
     <div
-      class="header-container w-full h-screen bg-[url('/assets/images/bg.jpg')] bg-cover bg-no-repeat bg-center"
+      class="header-container w-full h-screen bg-[url('./assets/images/bg.jpg')] bg-cover bg-no-repeat bg-center"
     >
       <header
         class="flex items-center bg-white justify-between px-4 md:px-5 py-2"
@@ -30,7 +31,7 @@
           />
         </div>
         <nav
-          class="absolute md:static w-full md:w-auto bg-[#43b6b0] md:bg-transparent toggle-menu left-0 h-0 md:h-auto overflow-hidden top-[55px]"
+          class="absolute md:absolute lg:static w-full md:w-full lg:w-auto bg-[#43b6b0] md:bg-[#43b6b0] lg:bg-transparent toggle-menu left-0 md:left-0 h-0 md:h-0 lg:h-auto overflow-hidden top-[55px] md:top-[55px]"
         >
           <ul class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
             <li
@@ -65,7 +66,7 @@
             </li>
           </ul>
         </nav>
-        <div class="header-btns flex items-center gap-5 hidden md:flex">
+        <div class="header-btns flex items-center gap-5 hidden md:hidden lg:flex">
           <div class="text-[13px] cursor-pointer">Login</div>
           <div
             class="px-4 py-1 bg-[#43b6b0] cursor-pointer text-white text-[13px] hover:bg-white hover:border hover:border-[#43b6b0] duration-[700ms] hover:text-black rounded-sm"
@@ -74,22 +75,22 @@
           </div>
         </div>
         <i
-          class="fa-solid fa-bars text-[#43b6b0] md:hidden toggle-btn cursor-pointer"
+          class="fa-solid fa-bars text-[#43b6b0] md:block lg:hidden toggle-btn cursor-pointer"
         ></i>
       </header>
       <div
-        class="flex flex-col gap-3 w-full items-center justify-end md:justify-end h-4/5 pl-[30px]"
+        class="flex flex-col gap-3 w-full items-center justify-end  h-4/5 pl-[30px]"
       >
-        <h1 class="text-white text-[30px] md:text-[45px] font-bold">
+        <h1 class="text-white text-[30px] md:text-[40px] lg:text-[45px] font-bold image_item">
           Feel Staying, Like your own home
         </h1>
-        <p class="block md:hidden text-[13px] text-white">
+        <p class="block lg:hidden text-[13px] text-white">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolor
           officiis, obcaecati dolores voluptatem dolore velit magni repudiandae
           quia quos!
         </p>
         <div
-          class="w-11/12 md:w-3/4 h-11/12 md:h-[150px] rounded-3xl p-5 md:p-0 check-menu hidden md:flex fixed md:static left-5 bottom-5 bg-[rgba(255,255,255,0.4)] flex-col md:flex-row items-center justify-center gap-4"
+          class="w-11/12 lg:w-3/4 h-11/12 text_item md:h-[150px] rounded-3xl p-5 md:px-3 lg:p-0 check-menu hidden md:flex fixed md:static left-5 bottom-5 bg-[rgba(255,255,255,0.4)] flex-col md:flex-row items-center justify-center gap-4"
         >
           <div
             class="bg-white flex flex-col items-center gap-3 p-5 rounded-3xl w-[200px]"
@@ -141,14 +142,14 @@
           <img
             src="./assets/images/about_image.jpg"
             alt=""
-            class="w-full h-60 object-cover"
+            class="w-full h-60 object-cover about_us_image"
           />
         </div>
         <div class="h-full flex flex-col items-center justify-center">
-          <h2 class="uppercase font-medium text-[#43b6b0] py-5">
+          <h2 class="uppercase font-medium text-[#43b6b0] py-5 about_text_right_1">
             Star hotel with unforgetable view
           </h2>
-          <p class="text-[13px] md:text-[14px] text-center">
+          <p class="text-[13px] md:text-[14px] text-center about_text_right_2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             commodi eveniet modi earum? Est a non natus debitis laboriosam modi.
             Animi nihil earum rem repudiandae, maxime modi exercitationem
@@ -161,17 +162,17 @@
     <div class="py-20">
       <div class="flex justify-center">
         <h2
-          class="text-center text-[25px] font-semibold offer-text relative inline-block"
+          class="text-center text-[18px] service-heading md:text-[20px] py-2 md:py-0 font-semibold offer-text relative inline-block"
         >
           What do we offer
         </h2>
       </div>
-      <p class="text-center text-[14px]">
+      <p class="text-center text-[14px] service-heading">
         There are many variations of passages
       </p>
       <div class="flex justify-center">
-        <div class="w-3/4 grid grid-cols-1 md:grid-cols-4 gap-y-5 py-12">
-          <div class="flex flex-col gap-1 items-center">
+        <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-5 py-12">
+          <div class="flex flex-col gap-1 items-center service-item_1">
             <img
               src="./assets/images/icon_1.png"
               class="w-20 md:w-24 h-20 md:h-24"
@@ -187,7 +188,7 @@
               Learn more
             </div>
           </div>
-          <div class="flex flex-col gap-1 items-center">
+          <div class="flex flex-col gap-1 items-center service-item_2">
             <img
               src="./assets/images/icon_2.png"
               class="w-20 md:w-24 h-20 md:h-24"
@@ -203,7 +204,7 @@
               Learn more
             </div>
           </div>
-          <div class="flex flex-col gap-1 items-center">
+          <div class="flex flex-col gap-1 items-center service-item_3">
             <img
               src="./assets/images/icon_3.png"
               class="w-20 md:w-24 h-20 md:h-24"
@@ -219,7 +220,7 @@
               Learn more
             </div>
           </div>
-          <div class="flex flex-col gap-1 items-center">
+          <div class="flex flex-col gap-1 items-center service-item_4">
             <img
               src="./assets/images/icon_4.png"
               class="w-20 md:w-24 h-20 md:h-24"
@@ -243,15 +244,15 @@
         <div>
           <img
             src="./assets/images/break_fast_img.jpg"
-            class="w-full h-64 object-cover"
+            class="w-full h-64 object-cover image_item"
             alt="break_fast_img"
           />
         </div>
         <div class="relative">
           <div
-            class="flex flex-col gap-2 items-center justify-center bg-slate-100 p-10 absolute top-[-80px] md:top-[45px] left-0 md:left-[-30px]"
+            class="flex flex-col gap-2 text_item items-center justify-center bg-slate-100 p-10 absolute top-[-80px] md:top-[45px] left-0 md:left-[-30px]"
           >
-            <h3 class="text-[20px] font-semibold">Hight quality foods</h3>
+            <h3 class="text-[18px] font-semibold">Hight quality foods</h3>
             <p class="text-[13px] text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
               similique sequi architecto esse consequuntur est.
@@ -264,9 +265,9 @@
       <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 gap-3">
         <div class="relative">
           <div
-            class="flex flex-col gap-2 items-center justify-center bg-slate-100 p-10 absolute top-[150px] md:top-[45px] right-0 md:right-[-30px]"
+            class="flex flex-col gap-2 image_item items-center justify-center bg-slate-100 p-10 absolute top-[150px] md:top-[45px] right-0 md:right-[-30px]"
           >
-            <h3 class="text-[20px] font-semibold">Unforgettable SPA</h3>
+            <h3 class="text-[18px] font-semibold">Unforgettable SPA</h3>
             <p class="text-[13px] text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
               similique sequi architecto esse consequuntur est.
@@ -276,7 +277,7 @@
         <div>
           <img
             src="./assets/images/spa_img.jpg"
-            class="w-full h-64 object-cover"
+            class="w-full h-64 object-cover text_item"
             alt="spa_img"
           />
         </div>
@@ -286,14 +287,14 @@
     <div class="py-10">
       <div class="flex justify-center">
         <h2
-          class="text-center text-[25px] font-semibold offer-text relative inline-block"
+          class="text-center text-[18px] service-heading md:text-[20px] font-semibold offer-text relative inline-block"
         >
           Top Apartments
         </h2>
       </div>
       <div class="flex justify-center py-14">
-        <div class="w-3/4 grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)]">
+        <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)] room_item_1">
             <img src="./assets/images/room_1.jpg" alt="room_1" />
             <div class="p-3">
               <div class="flex justify-between pb-1">
@@ -315,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)]">
+          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)] room_item_2">
             <img src="./assets/images/room_2.jpg" alt="room_2" />
             <div class="p-3">
               <div class="flex justify-between pb-1">
@@ -337,7 +338,7 @@
               </div>
             </div>
           </div>
-          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)]">
+          <div class="shadow-[0px_0px_5px_rgba(0,0,0,0.2)] room_item_3">
             <img src="./assets/images/room_3.jpg" alt="room_3" />
             <div class="p-3">
               <div class="flex justify-between pb-1">
@@ -364,67 +365,158 @@
     </div>
 
     <div class="py-10 flex justify-center">
-      <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="w-3/4 grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div class="flex flex-col gap-2">
-          <img src="./assets/images/room_4.jpg" alt="room_4">
+          <img src="./assets/images/room_4.jpg" alt="room_4" class="scale_up_1">
           <div class="grid grid-cols-3 gap-2">
-            <img src="./assets/images/room_sub1.jpg" alt="room_sub1">
-            <img src="./assets/images/room_sub2.jpg" alt="room_sub2">
-            <img src="./assets/images/room_sub3.jpg" alt="room_sub3">
+            <img src="./assets/images/room_sub1.jpg" alt="room_sub1"  class="scale_up_2">
+            <img src="./assets/images/room_sub2.jpg" alt="room_sub2"  class="scale_up_3">
+            <img src="./assets/images/room_sub3.jpg" alt="room_sub3"  class="scale_up_4">
           </div>
         </div>
         <div>
-          <h3 class="text-[18px] md:text-[20px] font-semibold ">Room Details</h3>
-          <p class="text-[13px] py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus, velit aperiam et, quod ex cum vero doloribus odit doloremque nesciunt. Porro excepturi voluptatibus sapiente!</p>
-          <h3 class="text-[18px] md:text-[20px] font-semibold">Room Amenities</h3>
-          <div class="grid grid-cols-4 gap-2 py-3 text-[#43b6b0]">
+          <h3 class="text-[18px] md:text-[20px] font-semibold service-item_1">Room Details</h3>
+          <p class="text-[13px] py-2 service-item_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus, velit aperiam et, quod ex cum vero doloribus odit doloremque nesciunt. Porro excepturi voluptatibus sapiente!</p>
+          <h3 class="text-[18px] md:text-[20px] font-semibold service-item_3">Room Amenities</h3>
+          <div class="grid grid-cols-2 service-item_3 md:grid-cols-4 gap-2 py-3 text-[#43b6b0]">
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
               <i class="fa-solid fa-wifi text-[12px]"></i>
               <small class="text-[12px]">Free wifi</small>
             </div>
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
-              <i class="fa-solid fa-tv"></i>
+              <i class="fa-solid fa-tv text-[12px]"></i>
               <small class="text-[12px]">64-inch TV</small>
             </div>
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
-              <i class="fa-solid fa-temperature-arrow-up"></i>
+              <i class="fa-solid fa-temperature-arrow-up text-[12px]"></i>
               <small class="text-[12px]">Heater</small>
             </div>
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
-              <i class="fa-solid fa-fax"></i>
+              <i class="fa-solid fa-fax text-[12px]"></i>
               <small class="text-[12px]">Laundry</small>
             </div>
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
-              <i class="fa-solid fa-key"></i>
+              <i class="fa-solid fa-key text-[12px]"></i>
               <small class="text-[12px]">Digital Key</small>
             </div>
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
-              <i class="fa-solid fa-dog"></i>
+              <i class="fa-solid fa-dog text-[12px]"></i>
               <small class="text-[12px]">Pet Friendly</small>
             </div>
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
-              <i class="fa-solid fa-champagne-glasses"></i>
+              <i class="fa-solid fa-champagne-glasses text-[12px]"></i>
               <small class="text-[12px]">Mini bar</small>
             </div>
             <div class="flex items-center gap-2 p-2 justify-center rounded-sm border border-[#43b6b0]"> 
-              <i class="fa-solid fa-fan"></i>
+              <i class="fa-solid fa-fan text-[12px]"></i>
               <small class="text-[12px]">Air cooler</small>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      const toggleBtn = document.querySelector(".toggle-btn");
-      const toggleMenu = document.querySelector(".toggle-menu");
-      toggleBtn.addEventListener("click", function () {
-        toggleMenu.classList.toggle("active");
-      });
-      const checkBtn = document.querySelector(".check-btn");
-      const checkMenu = document.querySelector(".check-menu");
-      checkBtn.addEventListener("click", function () {
-        checkMenu.classList.toggle("active");
-      });
-    </script>
+    <div class="flex justify-center py-14">
+      <div class="w-3/4 grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex items-center justify-center flex-col image_item">
+          <h2 class="text-[18px] md:text-[20px] font-semibold align-start">Room Hightlights</h2>
+          <div class="flex items-center gap-10 py-5">
+            <ul>
+              <li class="text-[13px] list-disc">Sleeps 4</li>
+              <li class="text-[13px] list-disc">See view</li>
+              <li class="text-[13px] list-disc">Refrigerator</li>
+              <li class="text-[13px] list-disc">Seating area with sofa</li>
+              <li class="text-[13px] list-disc">Balcony</li>
+              <li class="text-[13px] list-disc">Coffee maker</li>
+            </ul>
+            <ul>
+              <li class="text-[13px] list-disc">400 thread count sheets</li>
+              <li class="text-[13px] list-disc">LCD tv</li>
+              <li class="text-[13px] list-disc">64-inch HDTV</li>
+              <li class="text-[13px] list-disc">Hairdryer</li>
+              <li class="text-[13px] list-disc">Iron</li>
+              <li class="text-[13px] list-disc">Iron/ironing board</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text_item">
+          <div class="p-5 bg-slate-100">
+            <h2 class="text-[18px] md:text-[20px] font-semibold">Book Your Room</h2>
+            <form>
+              <label class="text-[13px] font-medium block py-2">Check in date</label>
+              <input type="date" class="border text-[12px] px-3 py-2 w-full">
+              <label class="text-[13px] font-medium block py-2">Check out date</label>
+              <input type="date" class="border text-[12px] px-3 py-2 w-full">
+              <label class="text-[13px] font-medium block py-2">Adults</label>
+              <input type="text" class="border placeholder:text-[13px] text-[12px] px-3 py-2 w-full" placeholder="adults">
+              <label class="text-[13px] font-medium block py-2">Room</label>
+              <input type="text" class="border placeholder:text-[13px] text-[12px] px-3 py-2 w-full" placeholder="room">
+              <button class="px-3 py-2 bg-[#43b6b0] text-[13px] text-white text-center w-full my-3 cursor-pointer">Book from $400</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center py-14">
+      <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 ga-5">
+        <div class="relative">
+          <img src="./assets/images/cuisine.jpg" alt="cuisine" class="w-full h-72 scale_up_1">
+          <img src="./assets/images/chef.jpg " alt="chef" class="w-44 absolute bottom-0 rotate_image -right-4">
+        </div>
+        <div class="flex items-center flex-col justify-center px-5 text_item py-5 md:py-0">
+          <div class="flex justify-center">
+            <h2
+          class="text-center text-[18px] md:text-[20px] font-semibold offer-text relative inline-block"
+        >
+          Enjoy our local cuisine
+        </h2>
+          </div>
+        <p class="py-3 text-[13px] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa id enim amet similique qui magni ratione ea quo iure?</p>
+        <div class="w-24 h-8 leading-8 text-center mx-auto text-white text-[13px] bg-[#43b6b0] my-1 cursor-pointer">read more</div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-black flex items-center flex-col gap-5 pt-10">
+      <div class="w-3/4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="icons">
+            <i class="fa-brands fa-wikipedia-w w-8 h-8 rounded-full text-center border border-white leading-8 text-[12px] text-[#43b6b0]"></i>
+            <i class="fa-brands fa-twitter w-8 h-8 rounded-full text-center border border-white leading-8 text-[12px] text-[#43b6b0]"></i>
+            <i class="fa-brands fa-instagram w-8 h-8 rounded-full text-center border border-white leading-8 text-[12px] text-[#43b6b0]"></i>
+            <i class="fa-brands fa-facebook w-8 h-8 rounded-full text-center border border-white leading-8 text-[12px] text-[#43b6b0]"></i>
+          </div>
+          <div class="flex items-center">
+            <input type="text" class="border-none bg-white px-3 py-3 text-[13px] w-full" placeholder="Your Email">
+            <div class="px-5 py-3 text-[13px] text-white bg-[#43b6b0]">Join</div>
+          </div>
+      </div>
+      <div class="w-3/4 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <ul>
+          <li class="text-white text-[12px] py-1">Disclaimer</li>
+          <li class="text-white text-[12px] py-1">Payment</li>
+          <li class="text-white text-[12px] py-1">Contact Us</li>
+        </ul>
+        <ul>
+          <li class="text-white text-[12px] py-1">Services</li>
+          <li class="text-white text-[12px] py-1">Terms of Services</li>
+          <li class="text-white text-[12px] py-1">Cookie Policy</li>
+        </ul>
+        <ul>
+          <li class="text-white text-[12px] py-1">Our certifications</li>
+          <li class="text-white text-[12px] py-1">Terms of use</li>
+          <li class="text-white text-[12px] py-1">Privacy policy</li>
+        </ul>
+        <ul>
+          <li class="text-white text-[12px] py-1">Gifts</li>
+          <li class="text-white text-[12px] py-1">Careers</li>
+          <li class="text-white text-[12px] py-1">Privacy</li>
+        </ul>
+      </div>
+      <div class="w-full flex justify-center items-center gap-3 py-2 bg-white text-[13px]"> 
+        <i class="fa-regular fa-copyright"></i>
+        <div>Copyright</div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

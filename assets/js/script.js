@@ -4,11 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleBtn.addEventListener("click", function () {
     toggleMenu.classList.toggle("active");
   });
-  const checkBtn = document.querySelector(".check-btn");
-  const checkMenu = document.querySelector(".check-menu");
-  checkBtn.addEventListener("click", function () {
-    checkMenu.classList.toggle("active");
-  });
 
   ScrollReveal({ reset: true });
   ScrollReveal().reveal('.about_us_image', {
@@ -21,51 +16,75 @@ ScrollReveal().reveal('.about_text_right_1', {
     distance: '80px',
     origin:"right",
     duration:1500,
-    delay:500,
+    delay:400,
 });
 ScrollReveal().reveal('.about_text_right_2', {
     distance: '80px',
     origin:"right",
     duration:1500,
-    delay:800
+    delay:600
 });
 ScrollReveal().reveal('.service-heading', {
     distance: '80px',
     origin:"bottom",
     duration:1500,
-    delay:800
+    delay:400
 });
 ScrollReveal().reveal('.service-item_1', {
     distance: '80px',
     origin:"bottom",
     duration:1500,
-    delay:1000
+    delay:400
 });
 ScrollReveal().reveal('.service-item_2', {
     distance: '80px',
     origin:"bottom",
     duration:1500,
-    delay:1200
+    delay:600
 });
 ScrollReveal().reveal('.service-item_3', {
     distance: '80px',
     origin:"bottom",
     duration:1500,
-    delay:1400
+    delay:800
 });
 ScrollReveal().reveal('.service-item_4', {
     distance: '80px',
     origin:"bottom",
     duration:1500,
-    delay:1600
+    delay:1000
 });
 ScrollReveal().reveal('.image_item', {
     distance: '80px',
     origin:"left",
     duration:1500,
-    delay:1000
+    delay:400
+});
+ScrollReveal().reveal('.banner_text_1', {
+    distance: '80px',
+    origin:"left",
+    duration:1500,
+    delay:400
+});
+ScrollReveal().reveal('.banner_text_2', {
+    distance: '80px',
+    origin:"left",
+    duration:1500,
+    delay:600
+});
+ScrollReveal().reveal('.banner_text_3', {
+    distance: '80px',
+    origin:"left",
+    duration:1500,
+    delay:800
 });
 ScrollReveal().reveal('.text_item', {
+    distance: '80px',
+    origin:"right",
+    duration:1500,
+    delay:400
+});
+ScrollReveal().reveal('.banner_image', {
     distance: '80px',
     origin:"right",
     duration:1500,
@@ -75,39 +94,39 @@ ScrollReveal().reveal('.room_item_1', {
     distance: '80px',
     origin:"top",
     duration:1500,
-    delay:1000
+    delay:400
 });
 ScrollReveal().reveal('.room_item_2', {
     distance: '80px',
     origin:"top",
     duration:1500,
-    delay:1200
+    delay:600
 });
 ScrollReveal().reveal('.room_item_3', {
     distance: '80px',
     origin:"top",
     duration:1500,
-    delay:1400
+    delay:800
 });
 ScrollReveal().reveal('.scale_up_1', {
     scale:0.5,
     duration:1000,
-    delay:1000
+    delay:400
 });
 ScrollReveal().reveal('.scale_up_2', {
     scale:0.5,
     duration:1000,
-    delay:1200
+    delay:600
 });
 ScrollReveal().reveal('.scale_up_3', {
     scale:0.5,
     duration:1000,
-    delay:1400
+    delay:800
 });
 ScrollReveal().reveal('.scale_up_4', {
     scale:0.5,
     duration:1000,
-    delay:1600
+    delay:1000
 });
 ScrollReveal().reveal('.rotate_image', {
     duration:1000,
